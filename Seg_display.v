@@ -32,7 +32,7 @@ initial div_cnt = 0;
 	begin
 		if(!reset) 
 			div_cnt <= 8'd0;
-		else if(div_cnt==16'd50000)
+		else if(div_cnt==16'd20000)
 			div_cnt <= 8'd0;		
 		else 
 			div_cnt <= div_cnt+1'b1;
@@ -74,9 +74,9 @@ always @(posedge clock or negedge reset)
 		if(!reset) 
 			seg <=  2'b11;
 		else if(div_cnt < 20000)
-				seg <= 2'b01;
+			seg <= 2'b01;
 		else
-				seg <= 2'b10;
+			seg <= 2'b10;
 		end
 		
 endmodule

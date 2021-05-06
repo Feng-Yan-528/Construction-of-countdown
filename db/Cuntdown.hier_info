@@ -1,20 +1,20 @@
-|Top
+|Countdown
 clock => clock.IN1
 reset => reset.IN3
-beep <= Counter:counter.beep
-seg[0] <= Seg_display:seg_display.seg
-seg[1] <= Seg_display:seg_display.seg
-bs[0] <= Seg_display:seg_display.bs
-bs[1] <= Seg_display:seg_display.bs
-bs[2] <= Seg_display:seg_display.bs
-bs[3] <= Seg_display:seg_display.bs
-bs[4] <= Seg_display:seg_display.bs
-bs[5] <= Seg_display:seg_display.bs
-bs[6] <= Seg_display:seg_display.bs
-bs[7] <= Seg_display:seg_display.bs
+beep << Counter:counter.beep
+seg[0] << Seg_display:seg_display.seg
+seg[1] << Seg_display:seg_display.seg
+bs[0] << Seg_display:seg_display.bs
+bs[1] << Seg_display:seg_display.bs
+bs[2] << Seg_display:seg_display.bs
+bs[3] << Seg_display:seg_display.bs
+bs[4] << Seg_display:seg_display.bs
+bs[5] << Seg_display:seg_display.bs
+bs[6] << Seg_display:seg_display.bs
+bs[7] << Seg_display:seg_display.bs
 
 
-|Top|F_d:f_d
+|Countdown|F_d:f_d
 clock => cnt[0].CLK
 clock => cnt[1].CLK
 clock => cnt[2].CLK
@@ -70,7 +70,7 @@ reset => clock_1~reg0.ACLR
 clock_1 <= clock_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top|Counter:counter
+|Countdown|Counter:counter
 clock_1 => TimeL[0]~reg0.CLK
 clock_1 => TimeL[1]~reg0.CLK
 clock_1 => TimeL[2]~reg0.CLK
@@ -98,7 +98,7 @@ TimeL[3] <= TimeL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 beep <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Top|Seg_display:seg_display
+|Countdown|Seg_display:seg_display
 clock => seg[0]~reg0.CLK
 clock => seg[1]~reg0.CLK
 clock => bs[0]~reg0.CLK

@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/modelsim
+vCountdown
+!s110 1620337243
+!i10b 1
+!s100 2bgz]3h3TQH[P[mHLzk5B2
+IfUKb11>B=XmbX7`ii8Xcl2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1620331977
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Countdown.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Countdown.v
+Z2 L0 12
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1620337243.000000
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Countdown.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Countdown.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown
+Z6 tCvgOpt 0
+n@countdown
+vCountdown_tb
+Z7 !s110 1620337244
+!i10b 1
+!s100 K0cI;7M9nOZGO0hR@ng=61
+I:J>2:TO:BdRg606S<:GZe2
+R1
+R0
+w1620337224
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v
+L0 13
+R3
+r1
+!s85 0
+31
+Z8 !s108 1620337244.000000
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation
+R6
+n@countdown_tb
+vCounter
+R7
+!i10b 1
+!s100 O>I^dS^_5TXZPdAWeAE1@2
+IY7BoK2]V_6W[h4`1bc@gh2
+R1
+R0
+w1620323806
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Counter.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Counter.v
+Z9 L0 11
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Counter.v|
+!i113 1
+R4
+R5
+R6
+n@counter
+vF_d
+R7
+!i10b 1
+!s100 HVcRmjd6`:3zXhelL09nL3
+I=B7VO63W7Z24]`A^``cPD2
+R1
+R0
+w1620324724
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_d.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_d.v
+R2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_d.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_d.v|
+!i113 1
+R4
+R5
+R6
+n@f_d
+vSeg_display
+R7
+!i10b 1
+!s100 U@3<`@]2_zAR;>GTBc<ZO1
+ICM]dBDYDPzU65e16GW^im1
+R1
+R0
+w1620335445
+8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v
+FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v
+R9
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v|
+!i113 1
+R4
+R5
+R6
+n@seg_display
