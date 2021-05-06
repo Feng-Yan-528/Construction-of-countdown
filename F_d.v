@@ -10,12 +10,12 @@
  */
  
  module F_d(
- clock_25,
+ clock,
  reset,
  clock_1
  );
  
- input clock_25;
+ input clock;
  input  reset;
  output reg clock_1;
  
@@ -23,7 +23,7 @@
  initial cnt = 0;
  
  parameter TIME=24'd1250_0000;//Clock25MHz
- always@(posedge clock_25 or negedge reset)
+ always@(posedge clock or negedge reset)
 	begin
 		if(!reset)
 			begin

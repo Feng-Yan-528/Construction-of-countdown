@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu May 06 18:22:45 2021
+Analysis & Elaboration Status : Successful - Thu May 06 21:00:41 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Cuntdown
-Top-level Entity Name : F_d
+Top-level Entity Name : Top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
