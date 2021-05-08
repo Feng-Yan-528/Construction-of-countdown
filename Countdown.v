@@ -13,14 +13,16 @@ module Countdown(
 clock,
 reset,
 beep,
-seg,
-bs
+//seg,
+bs0,
+bs1
 );
 
  input clock;
  input reset;
- output [1:0] seg;
- output [7:0] bs;
+ //output [1:0] seg;
+ output [6:0] bs0;
+ output [6:0] bs1;
  output beep;
  
  wire c;
@@ -46,8 +48,9 @@ bs
  .reset(reset),
  .TimeH(TimeH),
  .TimeL(TimeL),
- .seg(seg),
- .bs(bs)
+ //.seg(seg),
+ .bs0(bs0),
+ .bs1(bs1)
  );
  
  endmodule

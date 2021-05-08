@@ -2,16 +2,20 @@
 clock => clock.IN1
 reset => reset.IN3
 beep << Counter:counter.beep
-seg[0] << Seg_display:seg_display.seg
-seg[1] << Seg_display:seg_display.seg
-bs[0] << Seg_display:seg_display.bs
-bs[1] << Seg_display:seg_display.bs
-bs[2] << Seg_display:seg_display.bs
-bs[3] << Seg_display:seg_display.bs
-bs[4] << Seg_display:seg_display.bs
-bs[5] << Seg_display:seg_display.bs
-bs[6] << Seg_display:seg_display.bs
-bs[7] << Seg_display:seg_display.bs
+bs0[0] << Seg_display:seg_display.bs0
+bs0[1] << Seg_display:seg_display.bs0
+bs0[2] << Seg_display:seg_display.bs0
+bs0[3] << Seg_display:seg_display.bs0
+bs0[4] << Seg_display:seg_display.bs0
+bs0[5] << Seg_display:seg_display.bs0
+bs0[6] << Seg_display:seg_display.bs0
+bs1[0] << Seg_display:seg_display.bs1
+bs1[1] << Seg_display:seg_display.bs1
+bs1[2] << Seg_display:seg_display.bs1
+bs1[3] << Seg_display:seg_display.bs1
+bs1[4] << Seg_display:seg_display.bs1
+bs1[5] << Seg_display:seg_display.bs1
+bs1[6] << Seg_display:seg_display.bs1
 
 
 |Countdown|F_d:f_d
@@ -39,7 +43,6 @@ clock => cnt[20].CLK
 clock => cnt[21].CLK
 clock => cnt[22].CLK
 clock => cnt[23].CLK
-clock => cnt[24].CLK
 clock => clock_1~reg0.CLK
 reset => cnt[0].ACLR
 reset => cnt[1].ACLR
@@ -65,7 +68,6 @@ reset => cnt[20].ACLR
 reset => cnt[21].ACLR
 reset => cnt[22].ACLR
 reset => cnt[23].ACLR
-reset => cnt[24].ACLR
 reset => clock_1~reg0.ACLR
 clock_1 <= clock_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -99,16 +101,20 @@ beep <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Countdown|Seg_display:seg_display
-clock => seg[0]~reg0.CLK
-clock => seg[1]~reg0.CLK
-clock => bs[0]~reg0.CLK
-clock => bs[1]~reg0.CLK
-clock => bs[2]~reg0.CLK
-clock => bs[3]~reg0.CLK
-clock => bs[4]~reg0.CLK
-clock => bs[5]~reg0.CLK
-clock => bs[6]~reg0.CLK
-clock => bs[7]~reg0.CLK
+clock => bs1[0]~reg0.CLK
+clock => bs1[1]~reg0.CLK
+clock => bs1[2]~reg0.CLK
+clock => bs1[3]~reg0.CLK
+clock => bs1[4]~reg0.CLK
+clock => bs1[5]~reg0.CLK
+clock => bs1[6]~reg0.CLK
+clock => bs0[0]~reg0.CLK
+clock => bs0[1]~reg0.CLK
+clock => bs0[2]~reg0.CLK
+clock => bs0[3]~reg0.CLK
+clock => bs0[4]~reg0.CLK
+clock => bs0[5]~reg0.CLK
+clock => bs0[6]~reg0.CLK
 clock => display_num[0].CLK
 clock => display_num[1].CLK
 clock => display_num[2].CLK
@@ -145,16 +151,20 @@ reset => div_cnt[12].ACLR
 reset => div_cnt[13].ACLR
 reset => div_cnt[14].ACLR
 reset => div_cnt[15].ACLR
-reset => bs[0]~reg0.ACLR
-reset => bs[1]~reg0.ACLR
-reset => bs[2]~reg0.ACLR
-reset => bs[3]~reg0.ACLR
-reset => bs[4]~reg0.ACLR
-reset => bs[5]~reg0.ACLR
-reset => bs[6]~reg0.ACLR
-reset => bs[7]~reg0.ACLR
-reset => seg[0]~reg0.PRESET
-reset => seg[1]~reg0.PRESET
+reset => bs1[0]~reg0.ACLR
+reset => bs1[1]~reg0.ACLR
+reset => bs1[2]~reg0.ACLR
+reset => bs1[3]~reg0.ACLR
+reset => bs1[4]~reg0.ACLR
+reset => bs1[5]~reg0.ACLR
+reset => bs1[6]~reg0.ACLR
+reset => bs0[0]~reg0.ACLR
+reset => bs0[1]~reg0.ACLR
+reset => bs0[2]~reg0.ACLR
+reset => bs0[3]~reg0.ACLR
+reset => bs0[4]~reg0.ACLR
+reset => bs0[5]~reg0.ACLR
+reset => bs0[6]~reg0.ACLR
 reset => display_num[0].ACLR
 reset => display_num[1].ACLR
 reset => display_num[2].ACLR
@@ -167,15 +177,19 @@ TimeL[0] => display_num.DATAA
 TimeL[1] => display_num.DATAA
 TimeL[2] => display_num.DATAA
 TimeL[3] => display_num.DATAA
-seg[0] <= seg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-seg[1] <= seg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[0] <= bs[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[1] <= bs[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[2] <= bs[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[3] <= bs[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[4] <= bs[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[5] <= bs[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[6] <= bs[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-bs[7] <= bs[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[0] <= bs0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[1] <= bs0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[2] <= bs0[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[3] <= bs0[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[4] <= bs0[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[5] <= bs0[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs0[6] <= bs0[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[0] <= bs1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[1] <= bs1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[2] <= bs1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[3] <= bs1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[4] <= bs1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[5] <= bs1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bs1[6] <= bs1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

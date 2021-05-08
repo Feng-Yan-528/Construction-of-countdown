@@ -8,39 +8,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "seg[0]",
+					"name" : "bs0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "seg[1]",
+					"name" : "bs0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[0]",
+					"name" : "bs0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[1]",
+					"name" : "bs0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[2]",
+					"name" : "bs0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[3]",
+					"name" : "bs0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[4]",
+					"name" : "bs0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[5]",
+					"name" : "bs1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "bs[6]",
+					"name" : "bs1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bs1[6]",
 					"strict" : false
 				},
 				{
