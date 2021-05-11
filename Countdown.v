@@ -25,21 +25,28 @@ bs1
  output [6:0] bs1;
  output beep;
  
- wire e;
+ wire df1;
+ wire df2;
  wire c;
  wire [3:0] TimeL;
  wire [3:0] TimeH;
 
- F_d f_d(
+ F_5 f_5(
  .clock(clock),
  .reset(reset),
- .clock_p(e)
+ .clock_5(df1)
  );
  
- F_d2 f_d2(
- .clock(e),
+ F_10 f_10(
+ .clock(df1),
  .reset(reset),
- .clock_1(c)
+ .clock_10(df2)
+ );
+ 
+ F_1 f_1(
+ .clock(df2),
+ .reset(reset),
+ .clock_f(c)
  );
  
  Counter counter(

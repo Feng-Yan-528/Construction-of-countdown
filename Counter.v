@@ -25,17 +25,17 @@
 	
  assign beep =({TimeH,TimeL}==8'h00);//When the count is 0, the buzzer goes off.
  
- initial {TimeH,TimeL} = 8'h20;
+ initial {TimeH,TimeL} = 8'h15;
  
 always@(posedge clock_1 or negedge reset)
 	begin
 		if(!reset)
-			{TimeH,TimeL} <= 8'h20;
+			{TimeH,TimeL} <= 8'h15;
 		else if({TimeH,TimeL}==8'h00)
 			{TimeH,TimeL} <={TimeH,TimeL};
 		else if(TimeL==4'h0)
 			begin
-				TimeH <=TimeH-1'b1;
+				TimeH <=TimeH-4'h1;
 				TimeL <=4'h9;
 			end
 		else
