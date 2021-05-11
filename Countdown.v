@@ -25,12 +25,19 @@ bs1
  output [6:0] bs1;
  output beep;
  
+ wire e;
  wire c;
  wire [3:0] TimeL;
  wire [3:0] TimeH;
 
  F_d f_d(
  .clock(clock),
+ .reset(reset),
+ .clock_p(e)
+ );
+ 
+ F_d2 f_d2(
+ .clock(e),
  .reset(reset),
  .clock_1(c)
  );
