@@ -19,8 +19,8 @@
  input  reset;
  output reg clock_1;
  
- parameter	WIDTH	= 25001;//The number of digits of the counter. The maximum value of the count is 2**WIDTH-1
- parameter	N	= 50000;   
+ parameter	WIDTH	= 501;//The number of digits of the counter. The maximum value of the count is 2**WIDTH-1
+ parameter	N	= 1000;
  
  reg  [WIDTH-1:0] cnt;//The register is used to store the value of the counter
  always @ (posedge clock or negedge reset) 
