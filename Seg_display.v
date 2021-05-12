@@ -29,13 +29,13 @@
 
 always @(posedge clock or negedge reset)
  	begin
- 	if(!reset) begin
-	dispH <= 4'h0;
-	dispL <= 4'h0;
-	end 
- 	else 
+// 	if(!reset) begin
+//	dispH <= 4'h0;
+//	dispL <= 4'h0;
+//	end  else 
  	dispH <= TimeH; 
  	dispL <= TimeL;
+//	end
 	end
 	
 	always @(posedge clock or negedge reset)

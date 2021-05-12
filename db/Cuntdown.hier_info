@@ -1,6 +1,6 @@
 |Countdown
 clock => clock.IN1
-reset => reset.IN5
+reset => reset.IN3
 beep << Counter:counter.beep
 bs0[0] << Seg_display:seg_display.bs0
 bs0[1] << Seg_display:seg_display.bs0
@@ -18,7 +18,13 @@ bs1[5] << Seg_display:seg_display.bs1
 bs1[6] << Seg_display:seg_display.bs1
 
 
-|Countdown|F_5:f_5
+|Countdown|FD:f
+clock => clock.IN1
+reset => reset.IN3
+clock_F <= F_1:f1.clock_f
+
+
+|Countdown|FD:f|F_5:fd
 clock => clock_1.CLK
 clock => cnt_1[0].CLK
 clock => cnt_1[1].CLK
@@ -1030,7 +1036,7 @@ reset => cnt_0[250].ACLR
 clock_5 <= clock_5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Countdown|F_10:f_10
+|Countdown|FD:f|F_10:f10
 clock => clock_1.CLK
 clock => cnt_1[0].CLK
 clock => cnt_1[1].CLK
@@ -3042,7 +3048,7 @@ reset => cnt_0[500].ACLR
 clock_10 <= clock_10.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Countdown|F_1:f_1
+|Countdown|FD:f|F_1:f1
 clock => clock_1.CLK
 clock => cnt_1[0].CLK
 clock => cnt_1[1].CLK
@@ -3297,10 +3303,6 @@ clock => bs1[3]~reg0.CLK
 clock => bs1[4]~reg0.CLK
 clock => bs1[5]~reg0.CLK
 clock => bs1[6]~reg0.CLK
-clock => dispH[0].CLK
-clock => dispH[1].CLK
-clock => dispH[2].CLK
-clock => dispH[3].CLK
 reset => bs0[0]~reg0.ACLR
 reset => bs0[1]~reg0.ACLR
 reset => bs0[2]~reg0.ACLR
@@ -3315,14 +3317,34 @@ reset => bs1[3]~reg0.ACLR
 reset => bs1[4]~reg0.ACLR
 reset => bs1[5]~reg0.ACLR
 reset => bs1[6]~reg0.PRESET
-reset => dispH[0].ACLR
-reset => dispH[1].ACLR
-reset => dispH[2].ACLR
-reset => dispH[3].ACLR
-TimeH[0] => dispH[0].DATAIN
-TimeH[1] => dispH[1].DATAIN
-TimeH[2] => dispH[2].DATAIN
-TimeH[3] => dispH[3].DATAIN
+TimeH[0] => Mux0.IN19
+TimeH[0] => Mux1.IN19
+TimeH[0] => Mux2.IN19
+TimeH[0] => Mux3.IN19
+TimeH[0] => Mux4.IN19
+TimeH[0] => Mux5.IN19
+TimeH[0] => Mux6.IN19
+TimeH[1] => Mux0.IN18
+TimeH[1] => Mux1.IN18
+TimeH[1] => Mux2.IN18
+TimeH[1] => Mux3.IN18
+TimeH[1] => Mux4.IN18
+TimeH[1] => Mux5.IN18
+TimeH[1] => Mux6.IN18
+TimeH[2] => Mux0.IN17
+TimeH[2] => Mux1.IN17
+TimeH[2] => Mux2.IN17
+TimeH[2] => Mux3.IN17
+TimeH[2] => Mux4.IN17
+TimeH[2] => Mux5.IN17
+TimeH[2] => Mux6.IN17
+TimeH[3] => Mux0.IN16
+TimeH[3] => Mux1.IN16
+TimeH[3] => Mux2.IN16
+TimeH[3] => Mux3.IN16
+TimeH[3] => Mux4.IN16
+TimeH[3] => Mux5.IN16
+TimeH[3] => Mux6.IN16
 TimeL[0] => Mux7.IN19
 TimeL[0] => Mux8.IN19
 TimeL[0] => Mux9.IN19
