@@ -1,4 +1,13 @@
-
+/*
+ * Countdown
+ * ---------------------
+ * For: University of Leeds
+ * Date: 6th May 2021
+ *
+ * Description
+ * ------------
+ * Integrate the frequency division module to make the code clearer.
+ */
 
 module FD(
 clock,

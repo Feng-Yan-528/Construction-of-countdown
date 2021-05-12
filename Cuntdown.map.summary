@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed May 12 11:17:22 2021
+Analysis & Synthesis Status : Successful - Wed May 12 11:33:34 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Cuntdown
 Top-level Entity Name : Countdown
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1634
+Total registers : 1642
 Total pins : 17
 Total virtual pins : 0
 Total block memory bits : 0

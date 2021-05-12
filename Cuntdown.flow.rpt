@@ -1,5 +1,5 @@
 Flow report for Cuntdown
-Wed May 12 11:20:29 2021
+Wed May 12 11:36:48 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May 12 11:19:48 2021       ;
+; Flow Status                     ; Successful - Wed May 12 11:36:03 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Cuntdown                                    ;
 ; Top-level Entity Name           ; Countdown                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,281 / 32,070 ( 4 % )                      ;
-; Total registers                 ; 1958                                        ;
+; Logic utilization (in ALMs)     ; 1,284 / 32,070 ( 4 % )                      ;
+; Total registers                 ; 1889                                        ;
 ; Total pins                      ; 17 / 457 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2021 11:17:04 ;
+; Start date & time ; 05/12/2021 11:33:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cuntdown            ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 18121611664596.162081462301152         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 18121611664596.162081559703488         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Countdown_tb   ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Countdown_tb                           ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -105,11 +105,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4857 MB             ; 00:00:37                           ;
-; Fitter                    ; 00:02:13     ; 2.1                     ; 6705 MB             ; 00:06:19                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 4839 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:40     ; 2.0                     ; 5270 MB             ; 00:00:56                           ;
-; Total                     ; 00:03:22     ; --                      ; --                  ; 00:08:02                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4845 MB             ; 00:00:35                           ;
+; Fitter                    ; 00:02:14     ; 2.1                     ; 6699 MB             ; 00:06:24                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4839 MB             ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:43     ; 2.0                     ; 5279 MB             ; 00:01:01                           ;
+; Total                     ; 00:03:26     ; --                      ; --                  ; 00:08:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

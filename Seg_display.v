@@ -27,15 +27,10 @@
  reg[3:0] dispH;//Current display data
  reg[3:0] dispL;
 
-always @(posedge clock or negedge reset)
+always @(posedge clock )
  	begin
-// 	if(!reset) begin
-//	dispH <= 4'h0;
-//	dispL <= 4'h0;
-//	end  else 
  	dispH <= TimeH; 
  	dispL <= TimeL;
-//	end
 	end
 	
 	always @(posedge clock or negedge reset)
