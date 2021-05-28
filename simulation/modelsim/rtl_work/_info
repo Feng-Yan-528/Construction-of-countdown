@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/modelsim
 vCountdown
-Z1 !s110 1622129489
+Z1 !s110 1622189785
 !i10b 1
 !s100 X6jMC>Ci=@h]mA[2OLkdL2
 IcZ3UZNa6d<8AdJZX43m8Y1
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1622129489.000000
+Z5 !s108 1622189785.000000
 !s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Countdown.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Countdown.v|
 !i113 1
@@ -32,13 +32,13 @@ Z7 !s92 -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniPro
 Z8 tCvgOpt 0
 n@countdown
 vCountdown_tb
-Z9 !s110 1622129490
+R1
 !i10b 1
-!s100 dm`f4Z3koPkb6QmSeekE33
-I:e4G<aNOTKJi@hX6JD`MU3
+!s100 SNeF3a0[;m^7aUE4hV]PM0
+I0959<X?c2YcPCBeBiAX:D3
 R2
 R0
-w1622129307
+w1622189025
 8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v
 FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v
 L0 13
@@ -46,7 +46,7 @@ R4
 r1
 !s85 0
 31
-!s108 1622129490.000000
+R5
 !s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/simulation/Countdown_tb.v|
 !i113 1
@@ -64,7 +64,7 @@ R0
 w1622118472
 8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Counter.v
 FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Counter.v
-Z10 L0 11
+Z9 L0 11
 R4
 r1
 !s85 0
@@ -78,7 +78,7 @@ R7
 R8
 n@counter
 vF_1
-R1
+Z10 !s110 1622189784
 !i10b 1
 !s100 Dj:2hDc^n]EG2P3[:oTg<2
 I]_:eG4;jeV6BBO0W]0P;23
@@ -92,7 +92,7 @@ R4
 r1
 !s85 0
 31
-R5
+Z11 !s108 1622189784.000000
 !s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_1.v|
 !i113 1
@@ -101,7 +101,7 @@ R7
 R8
 n@f_1
 vF_10
-R1
+R10
 !i10b 1
 !s100 C=^ZTNgefOUFzCOCWZnMG3
 IggL2<nFBoeTSkS><b9hk?0
@@ -115,7 +115,7 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1622129488.000000
+R11
 !s107 C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_10.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown|C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/F_10.v|
 !i113 1
@@ -124,7 +124,7 @@ R7
 R8
 n@f_10
 vF_5
-!s110 1622129488
+R10
 !i10b 1
 !s100 G=d<JYfO4<<VT`a2AUaDU0
 In=Ph:>AKVlOhPUUCGBQ[90
@@ -147,7 +147,7 @@ R7
 R8
 n@f_5
 vFD
-R9
+R1
 !i10b 1
 !s100 eCYFKJzdSm;kJlQK5_UKa2
 IA?XH^NKR0E4W`TGJORho_3
@@ -179,7 +179,7 @@ R0
 w1622129309
 8C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v
 FC:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v
-R10
+R9
 R4
 r1
 !s85 0

@@ -8,7 +8,7 @@
  * ------------
  * Test the whole module
  */
-`timescale 1ns/100 ps
+`timescale 1 us/100 ns
  
 module Countdown_tb;
 
@@ -39,7 +39,7 @@ initial begin
 //$monitor("%d ns\tclock=%d\t reset=%d\t bs1=%b\t bs0=%b\t clock_5=%b\t clock_10=%b\t clock_f=%b\t beep=%b ",$time,clock,reset,bs1,bs0,beep,clock_5,clock_10,clock_f,Tim);
 clock=1'b1;
 reset=1'b0;
-#200
+#2000
 clock=1'b1;
 reset=1'b1;
 
