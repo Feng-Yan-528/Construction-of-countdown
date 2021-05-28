@@ -1,2 +1,3 @@
 # Construction-of-countdown
 Construction of countdown module
+The countdown module is an IP core module designed by me, and its primary function is to rush to answer the countdown. After the system is reset, when the countdown switch signal is high, the countdown digital tube begins to count down in seconds from 15. When a player rushes to answer, the host gives a stop timing signal; if no one answers after the countdown is over, the countdown module will output a high level to brighten the LED light. The Module as a whole is shown in figure 1.5. The output signal of the clock signal clock (1Hz) and reset signal reset is bs0,bs1.
