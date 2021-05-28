@@ -41,7 +41,7 @@ always@(posedge clock_1 or negedge reset)
 		else
 			begin
 				TimeH <=TimeH;
-				TimeL <=TimeL-1'b1;
+				TimeL <=TimeL-4'b1;
 			end
 	end
 endmodule

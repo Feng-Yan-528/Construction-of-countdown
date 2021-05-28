@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Seg_display.v(32): always construct contains both blocking and non-blocking assignments File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/Construction-of-countdown/Seg_display.v Line: 32

@@ -16,24 +16,34 @@ module Countdown_tb;
  reg reset;
  wire [6:0] bs0;
  wire [6:0] bs1;
- wire beep;
+ wire [3:0] TimeH,TimeL;
+
+
+ wire beep,clock_5,clock_10,clock_f;
 
 Countdown countdown_dut(
 .clock(clock),
 .reset(reset),
 .bs1(bs1),
 .bs0(bs0),
-.beep(beep)
+.clock_5(clock_5),
+.clock_10(clock_10),
+.clock_f(clock_f),
+.beep(beep),
+.TimeH(TimeH),
+.TimeL(TimeL)
 );
 
 initial begin
-$display("%d ns\tSimulation Started",$time);
-$monitor("%d ns\tclock=%d\t reset=%d\t bs1=%b\t bs0=%b\t beep=%b ",$time,clock,reset,bs1,bs0,beep);
+//$display("%d ns\tSimulation Started",$time);
+//$monitor("%d ns\tclock=%d\t reset=%d\t bs1=%b\t bs0=%b\t clock_5=%b\t clock_10=%b\t clock_f=%b\t beep=%b ",$time,clock,reset,bs1,bs0,beep,clock_5,clock_10,clock_f,Tim);
 clock=1'b1;
 reset=1'b0;
+#200
+clock=1'b1;
+reset=1'b1;
 
-#1000;
-$display("%d ns\tSimulation Finished",$time); //Finished
+//$display("%d ns\tSimulation Finished",$time); //Finished
 end
 always #20 clock=~clock;
 

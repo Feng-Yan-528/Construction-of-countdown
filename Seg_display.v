@@ -24,19 +24,25 @@
  output reg[6:0] bs0;//Bit selection data bit
  output reg[6:0] bs1;
  
+ 
  reg[3:0] dispH;//Current display data
  reg[3:0] dispL;
 
-always @(posedge clock )
- 	begin
- 	dispH <= TimeH; 
+ 
+always @(posedge clock or negedge reset)
+	begin
+	 if(!reset) begin
+			{dispH,dispL} = 8'h15;
+			end else begin
+ 	dispH <= TimeH;
  	dispL <= TimeL;
+	end
 	end
 	
 	always @(posedge clock or negedge reset)
 	begin
 		if(!reset) begin
-			bs1 <= 7'h40;
+			bs1 <= 7'h79;
 		end
 		else begin
 			case(dispH) 
@@ -77,7 +83,7 @@ always @(posedge clock )
 always @(posedge clock or negedge reset)
 	begin
 		if(!reset) begin
-			bs0 <= 7'h40;
+			bs0 <= 7'h12;
 		end
 		else begin
 			case(dispL) 

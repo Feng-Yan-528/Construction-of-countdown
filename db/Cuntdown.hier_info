@@ -1,27 +1,40 @@
 |Countdown
 clock => clock.IN1
 reset => reset.IN3
-beep << Counter:counter.beep
-bs0[0] << Seg_display:seg_display.bs0
-bs0[1] << Seg_display:seg_display.bs0
-bs0[2] << Seg_display:seg_display.bs0
-bs0[3] << Seg_display:seg_display.bs0
-bs0[4] << Seg_display:seg_display.bs0
-bs0[5] << Seg_display:seg_display.bs0
-bs0[6] << Seg_display:seg_display.bs0
-bs1[0] << Seg_display:seg_display.bs1
-bs1[1] << Seg_display:seg_display.bs1
-bs1[2] << Seg_display:seg_display.bs1
-bs1[3] << Seg_display:seg_display.bs1
-bs1[4] << Seg_display:seg_display.bs1
-bs1[5] << Seg_display:seg_display.bs1
-bs1[6] << Seg_display:seg_display.bs1
+beep <= Counter:counter.beep
+bs0[0] <= Seg_display:seg_display.bs0
+bs0[1] <= Seg_display:seg_display.bs0
+bs0[2] <= Seg_display:seg_display.bs0
+bs0[3] <= Seg_display:seg_display.bs0
+bs0[4] <= Seg_display:seg_display.bs0
+bs0[5] <= Seg_display:seg_display.bs0
+bs0[6] <= Seg_display:seg_display.bs0
+bs1[0] <= Seg_display:seg_display.bs1
+bs1[1] <= Seg_display:seg_display.bs1
+bs1[2] <= Seg_display:seg_display.bs1
+bs1[3] <= Seg_display:seg_display.bs1
+bs1[4] <= Seg_display:seg_display.bs1
+bs1[5] <= Seg_display:seg_display.bs1
+bs1[6] <= Seg_display:seg_display.bs1
+clock_5 <= FD:f.clock_5
+clock_10 <= FD:f.clock_10
+clock_f <= clock_f.DB_MAX_OUTPUT_PORT_TYPE
+TimeH[0] <= TimeH[0].DB_MAX_OUTPUT_PORT_TYPE
+TimeH[1] <= TimeH[1].DB_MAX_OUTPUT_PORT_TYPE
+TimeH[2] <= TimeH[2].DB_MAX_OUTPUT_PORT_TYPE
+TimeH[3] <= TimeH[3].DB_MAX_OUTPUT_PORT_TYPE
+TimeL[0] <= TimeL[0].DB_MAX_OUTPUT_PORT_TYPE
+TimeL[1] <= TimeL[1].DB_MAX_OUTPUT_PORT_TYPE
+TimeL[2] <= TimeL[2].DB_MAX_OUTPUT_PORT_TYPE
+TimeL[3] <= TimeL[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Countdown|FD:f
 clock => clock.IN1
 reset => reset.IN3
 clock_F <= F_1:f1.clock_f
+clock_5 <= c.DB_MAX_OUTPUT_PORT_TYPE
+clock_10 <= o.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Countdown|FD:f|F_5:fd
@@ -3312,19 +3325,27 @@ clock => dispH[1].CLK
 clock => dispH[2].CLK
 clock => dispH[3].CLK
 reset => bs0[0]~reg0.ACLR
-reset => bs0[1]~reg0.ACLR
+reset => bs0[1]~reg0.PRESET
 reset => bs0[2]~reg0.ACLR
 reset => bs0[3]~reg0.ACLR
-reset => bs0[4]~reg0.ACLR
+reset => bs0[4]~reg0.PRESET
 reset => bs0[5]~reg0.ACLR
-reset => bs0[6]~reg0.PRESET
-reset => bs1[0]~reg0.ACLR
+reset => bs0[6]~reg0.ACLR
+reset => bs1[0]~reg0.PRESET
 reset => bs1[1]~reg0.ACLR
 reset => bs1[2]~reg0.ACLR
-reset => bs1[3]~reg0.ACLR
-reset => bs1[4]~reg0.ACLR
-reset => bs1[5]~reg0.ACLR
+reset => bs1[3]~reg0.PRESET
+reset => bs1[4]~reg0.PRESET
+reset => bs1[5]~reg0.PRESET
 reset => bs1[6]~reg0.PRESET
+reset => dispL[0].PRESET
+reset => dispL[1].ACLR
+reset => dispL[2].PRESET
+reset => dispL[3].ACLR
+reset => dispH[0].PRESET
+reset => dispH[1].ACLR
+reset => dispH[2].ACLR
+reset => dispH[3].ACLR
 TimeH[0] => dispH[0].DATAIN
 TimeH[1] => dispH[1].DATAIN
 TimeH[2] => dispH[2].DATAIN

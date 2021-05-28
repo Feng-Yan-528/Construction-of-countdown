@@ -12,16 +12,23 @@
 module FD(
 clock,
 reset,
-clock_F
+clock_F,
+clock_5,
+clock_10
 );
 
 input clock;
 input reset;
 output  clock_F;
+output  clock_5;
+output  clock_10;
 
 
 wire c;
 wire o;
+
+assign clock_5=c;
+assign clock_10=o;
 
 F_5 fd(
 .clock(clock),

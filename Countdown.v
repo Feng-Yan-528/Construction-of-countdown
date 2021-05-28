@@ -13,9 +13,13 @@ module Countdown(
 clock,
 reset,
 beep,
-//seg,
 bs0,
-bs1
+bs1,
+clock_5,
+clock_10,
+clock_f,
+TimeH,
+TimeL
 );
 
  input clock;
@@ -23,19 +27,24 @@ bs1
  output [6:0] bs0;
  output [6:0] bs1;
  output beep;
+ output clock_5;
+ output clock_10;
+ output clock_f;
+ output [3:0] TimeL;
+ output [3:0] TimeH;
  
- wire c;
- wire [3:0] TimeL;
- wire [3:0] TimeH;
+
 
  FD f(
  .clock(clock),
  .reset(reset),
- .clock_F(c)
+ .clock_F(clock_f),
+ .clock_5(clock_5),
+ .clock_10(clock_10)
  );
  
  Counter counter(
- .clock_1(c),
+ .clock_1(clock_f),
  .reset(reset),
  .TimeH(TimeH),
  .TimeL(TimeL),
@@ -43,7 +52,7 @@ bs1
  );
  
  Seg_display seg_display(
- .clock(c),
+ .clock(clock_f),
  .reset(reset),
  .TimeH(TimeH),
  .TimeL(TimeL),
